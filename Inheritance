@@ -1,0 +1,66 @@
+# Smart Contracts Inheritance
+
+## 📝 Summary
+Today I learned about Solidity inheritance, which enables code reuse and modular design in smart contracts similar to languages like C or Python.
+
+## 🔍 Key Concepts
+- **Derived Contract:** The contract that inherits from another
+- **Base Contract:** The contract being inherited from
+- **Inheritance:** Derived contracts inherit all public and internal functions and state variables from base contracts
+- **Function Overriding:** Base functions must use `virtual` keyword, derived functions must use `override` keyword
+- **Multiple Inheritance:** Contracts can inherit from multiple base contracts
+- **Polymorphism:** Functions can be called on different contract types
+
+## 💻 Code Examples
+
+### Basic Inheritance
+```solidity
+contract DerivedContract is BaseContract {
+    // Your contract code here
+}
+```
+
+### Function Overriding
+```solidity
+// Base contract
+contract Base {
+    function example() public virtual {
+        // Base implementation
+    }
+}
+
+// Derived contract
+contract Derived is Base {
+    function example() public override {
+        // Override implementation
+    }
+}
+```
+
+### Function Calls Up Hierarchy
+```solidity
+// Explicit call
+ContractName.functionName()
+
+// Super call (one level higher)
+super.functionName()
+```
+
+## ❓ Questions & Confusion
+- How does gas optimization work with inheritance?
+- What's the difference between storage and memory in inherited contracts?
+- When should I use multiple inheritance vs composition?
+
+## 📚 Resources
+- [Solidity Documentation - Inheritance](https://docs.soliditylang.org/en/latest/contracts.html#inheritance)
+- [OpenZeppelin Contracts](https://github.com/OpenZeppelin/openzeppelin-contracts)
+- [Solidity by Example - Inheritance](https://solidity-by-example.org/inheritance/)
+
+## 🎯 Next Steps
+- [ ] Practice creating contracts with inheritance
+- [ ] Learn about abstract contracts
+- [ ] Study inheritance patterns in OpenZeppelin
+- [ ] Understand inheritance vs composition trade-offs
+
+---
+*Date: 2025-01-26*
