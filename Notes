@@ -1,0 +1,31 @@
+# Create a template for learning notes
+cat > notes/template.md << 'EOF'
+# [Topic Name]
+
+## 📝 Summary
+Brief overview of what I learned today.
+
+## 🔍 Key Concepts
+- Concept 1: Description
+- Concept 2: Description
+
+## 💻 Code Examples
+```solidity
+// Your code example here
+```
+
+## ❓ Questions & Confusion
+- Question 1
+- Question 2
+
+## 📚 Resources
+- [Resource 1](link)
+- [Resource 2](link)
+
+## 🎯 Next Steps
+- [ ] Action item 1
+- [ ] Action item 2
+
+---
+*Date: [Date]*
+EOF
