@@ -1,5 +1,6 @@
 cat > resources/learning-resources.md << 'EOF'
 # Learning Resources ��
+https://getfoundry.sh/
 
 ## 📖 Books
 - [ ] "Mastering Ethereum" by Andreas Antonopoulos
